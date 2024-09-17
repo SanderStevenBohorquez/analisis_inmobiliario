@@ -1,0 +1,39 @@
+# Análisis del Mercado Inmobiliario mediante Regresión Lineal Simple
+
+## Introducción
+El propósito de este proyecto es desarrollar un modelo de regresión lineal simple en C++ para predecir el precio de propiedades en Argentina. La variable independiente seleccionada para el modelo es el número de baños, y la variable dependiente es el precio de la propiedad.
+
+## Descripción del Dataset
+- Dataset: DS_Proyecto_01_Datos_Properati.csv
+- Fuente: Kaggle
+- Registros totales: 250
+- Variables principales:
+  - price: Precio de la propiedad en moneda local.
+  - bathrooms: Número de baños.
+
+## Análisis Exploratorio de Datos (EDA)
+El análisis exploratorio inicial mostró una correlación positiva entre el número de baños y el precio de las propiedades. Se detectaron algunos valores atípicos en el conjunto de datos, que fueron excluidos para mejorar la precisión del modelo.
+
+## Implementación del Modelo de Regresión Lineal
+Se implementó un modelo de regresión lineal simple para predecir el precio de las propiedades basado en el número de baños. Los coeficientes calculados son:
+- Pendiente (m): 201814
+- Intercepto (b): -61548.4
+
+## Resultados del Modelo
+- *Conjunto de Entrenamiento:*
+  - MSE: 1.55835e+10
+  - R²: 0.511228
+  - Interpretación: El modelo captura aproximadamente el 51.1228% de la variación en los precios de las propiedades basada en el número de baños.
+
+- *Conjunto de Prueba:*
+  - MSE: 1.11727e+10
+  - R²: -0.311395
+  - Interpretación: El rendimiento del modelo en el conjunto de prueba es menor, lo que indica que el modelo no se generaliza perfectamente a nuevos datos.
+
+## Discusión y Conclusiones
+El modelo de regresión lineal simple muestra que el número de baños tiene un impacto positivo en el precio de la propiedad, pero no es la única variable que influye. Los resultados sugieren que el modelo puede mejorarse incorporando más variables explicativas y ajustando su complejidad.
+
+## Posibles Mejoras
+- Incluir variables adicionales como la ubicación y el tamaño de la propiedad.
+- Usar un modelo de regresión múltiple para capturar más características.
+- Realizar una limpieza de datos más exhaustiva para eliminar valores atípicos.

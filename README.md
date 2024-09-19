@@ -34,3 +34,5 @@ Interpretación: El rendimiento del modelo en el conjunto de prueba es menor, lo
 ## Conclusiones
 El modelo de regresión lineal simple muestra que el número de baños tiene un impacto positivo en el precio de la propiedad, pero no es la única variable que influye.
 Para mejorar el modelo, se sugiere incluir más variables explicativas como la ubicación y el tamaño de la propiedad.
+
+//trabajo realizado por Yosefh Peña, Steven Bohorquez, Julio Useche y David Orjuela
